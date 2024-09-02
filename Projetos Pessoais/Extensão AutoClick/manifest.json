@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "version": "1.2.3",
+    "name": "Autoatualização Zendesk",
+    "description": "Automação para atualizar a lista de chamados do Zendesk",
+    "author": "Alysson Januário",
+    "permissions": ["activeTab", "scripting", "tabs", "storage"],
+    "action": {
+        "default_popup": "index.html"
+    }
+}
