@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+caption {
+font-size: 24px;
+background-color: #ccc;
+border:solid 2px #222;
+border-bottom: 0px;
+padding: 10px;
+}
+
+table {
+border: solid 2px #222;
+border-collapse: collapse;
+padding: 10px;
+}
+
+thead {
+background-color: #555;
+color: #fff;
+font-weight: bold;
+font-size: 17px;
+padding: 10px;
+
+}
+td,th {
+border-bottom: solid 1px #222;
+padding: 10px;
+padding-left: 15px;
+padding-right: 15px;
+text-align: center;
+}
+
+tbody > tr:nth-child(2n) {
+background-color: #0F0;
+}
+
+td:hover {
+text-decoration: underline;
+}

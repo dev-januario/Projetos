@@ -1,0 +1,206 @@
+<!--
+    Exercício passado pelo Bonieky.: 
+    Fazer uma página de tributo para treinar a matéria passada na aula.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+        * {
+            font-family: 'Signika Negative', sans-serif;
+            color: white;
+        }
+
+        body {
+            margin: 0;
+            background-image: url(https://i0.wp.com/emotioncard.com.br/wp-content/uploads/2019/04/plano-de-fundo-preto28.jpg?fit=2560%2C1600&ssl=1);
+            padding: 20px;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        header {
+            line-height: 2px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+
+        section img {
+            justify-content: center;
+            border: 2px solid yellow;
+            width: 25%;
+            border-radius: 200px;
+        }
+
+        .image-usuario {
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume {
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 18px;
+            width: 60%;
+        }
+
+        .timeline {
+            background-color: yellow;
+            width: 45%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            border: 3px solid #000;
+            box-shadow: 5px 5px 5px #000;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+
+        .timeline h1 {
+            color: black;
+            border-radius: 10px;
+            text-decoration: underline;
+        }
+
+        .descricao {
+            display: flex;
+            justify-content: center;
+            border: 2px solid #000;
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+
+        .date {
+            display: block;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            text-align: end;
+        }
+
+        .desc {
+            display: block;
+            text-align: left;
+            width: 50%;
+            color: black;
+            padding-left: 15px;
+        }
+
+        footer, a {
+            text-align: center;
+            padding-top: 15px;
+            text-decoration: none;
+            color: #CCC;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 25px;
+            }
+
+            h3 {
+                font-size: 10px;
+            }
+            
+            .desc {
+                padding: 10px;
+            }
+
+            .date {
+                padding: 10px;
+            }
+
+            .timeline {
+                width: 75%;
+            }
+
+            section img {
+                width: 50%;
+            }
+
+            .resume {
+                width: 85%;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alysson De Oliveira Januário</h1>
+        <h3>Nasci em Franca-SP no dia 10 de Maio de 2002</h3>
+    </header>
+    <section class="image-usuario">
+        <img src="https://pps.whatsapp.net/v/t61.24694-24/311779242_450164407331858_2228839598587402402_n.jpg?ccb=11-4&oh=01_AdRkdcKo5jDfx9pgImzDqXxU_uHUAcNk1bUI7gmN80aQGw&oe=63B078B3" alt="Imagem de Alysson De Oliveira Januário"/>
+    </section>
+    <section class="resume">
+        <div class="presentation">
+            Olá, meu nome é Alysson. <br/>Este é um exercício passado pelo professor: Bonieky Lacerda (B7 Web).<br/><br/>Dedico esse exercício ao Alysson do futuro, para quando você abrir este arquivo por um acaso irá lembrar do quanto sofreu pra fazer essa Página de Tributo. Nunca desista daquilo que você sonha, você sempre conseguiu chegar aonde quis e você sabe disso.<br/><br/>Look at me.<br/>Você conseguiu, meu lindo!<br/>
+        </div>
+    </section>
+    <nav class="timeline">
+        <h1>Linha do tempo:</h1>
+        <div class="descricao">
+            <div class="date">
+                2019:  
+            </div>
+            <div class="desc">
+                - Você encerrou o ciclo do Ensino Médio.
+            </div>
+        </div>
+        <div class="descricao">
+            <div class="date">
+                2020: 
+            </div>
+            <div class="desc">
+                - Você começou a estudar sobre Bolsa de Valores.<br/>
+                - Você amou a experiência de estudar.
+            </div>
+        </div>
+        <div class="descricao">
+            <div class="date">
+                2021:
+            </div>
+            <div class="desc">
+                - Você tomou atitude para estudar e ser um desenvolvedor.<br/>
+                - Você fez inscrição para entrar na FATEC.<br/>
+                - Você fez inscrição para entrar no Helpdesk.<br/>
+            </div>
+        </div>
+        <div class="descricao">
+            <div class="date">
+                2022: 
+            </div>
+            <div class="desc">
+                - Você passou no vestibular da FATEC.<br/>
+                - Você conseguiu entrar no Luiza Labs.<br/>
+                - Você acabou de tirar carta.<br/>
+                - Você comprou sua primeira moto.<br/>
+            </div>
+        </div>
+    </nav>
+    <footer>
+        <a href="https://www.instagram.com/alysson__januario/" target="_blank">Created by Alysson Januario</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!--
+    Realizar exercício passado pelo Bonieky.
+    Criar um formulário.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            min-height: 100%;
+            background-image: url(https://images.pexels.com/photos/60069/pexels-photo-60069.jpeg?auto=compress&cs=tinysrgb&w=600);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        section {
+            background-color: #ffffff;
+            width: 55%;
+            margin: auto;
+            margin-top: 5%;
+        }
+
+        .forms {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin: 0;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .form {
+            max-width: 670px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form2 {
+            max-width: 670px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info1 {
+            width: 330px;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .info2 {
+            width: 330px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .title {
+            font-size: 13px;
+            padding-bottom: 2px;
+        }
+
+        .title1 {
+            font-size: 13px;
+            padding-bottom: 2px;
+        }
+
+        .title2 {
+            font-size: 13px;
+            padding-bottom: 2px;
+            margin-top: 10px;
+        }
+
+        .larg_inp {   
+            height: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 8px;
+            padding-right: 8px;
+            background-color: #f2f2f2;
+            border: none;
+        }
+
+        textarea {
+            background-color: #f2f2f2;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 8px;
+            padding-right: 8px;
+            height: 80px;
+            resize: none;
+        }
+
+        .button {
+            width: 80px;
+            height: 30px;
+            color: #FFF;
+            background-color: #000;
+            margin-top: 10px;
+            box-shadow: 2px 2px 2px rgb(116, 115, 115);
+        }
+
+        @media (max-width: 840px) {
+            .form {
+                flex-direction: column;
+            }
+
+            h1 {
+                word-break: break-all;
+            }
+
+            .title1 {
+                padding-bottom: 2px;
+                padding-top: 10px;
+            }
+
+            .title, .title1, .title2 {
+                width: 100%;
+                word-break: break-all;
+            }
+
+            .info1, .info2 {
+                width: 100%;
+            }
+
+            ::placeholder {
+                word-break: break-all;
+            }
+
+            .button {
+                margin: auto;
+                margin-top: 15px;
+            }
+
+            section {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 290px) {
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="./assets/del.bat" class="forms">
+            <h1>Contact Us</h1>
+            <div class="form">
+                <label class="info1">
+                    <div class="title">Address</div>
+                    <input type="email" name="email" placeholder="Enter your E-mail Address" class="larg_inp">
+                </label>
+                <label class="info2">
+                    <div class="title1">Name</div>
+                    <input type="text" name="name" placeholder="Enter your Name" class="larg_inp" required>
+                </label>
+            </div>  
+            <div class="form">
+                <label class="info1">
+                    <div class="title2">Phone Number</div>
+                    <input type="tel" name="cell_number" placeholder="Enter your Phone Number" class="larg_inp">
+                </label>
+                <label class="info2">
+                    <div class="title2">Date</div>
+                    <input type="date" name="date" class="larg_inp" placeholder="mm/dd/yyyy">
+                </label>
+            </div>
+                <div class="form2">
+                <div class="title2">Message</div>
+                <textarea name="descricao" placeholder="Enter your message"></textarea></div>
+                <input type="submit" value="TO SEND" class="button">
+        </form>
+    </section>
+</body>
+</html>

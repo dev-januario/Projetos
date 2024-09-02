@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.tarja {
+    width: 220px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: dodgerblue;
+    box-shadow: 0px 0px 25px 0px rgb(146, 145, 145);
+    transform: rotate(-45deg);
+    top: 30px;
+    left: -53px;
+}
+.tarja a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-shadow: 0px 0px 20px blue ;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 12px 35px;
+}
